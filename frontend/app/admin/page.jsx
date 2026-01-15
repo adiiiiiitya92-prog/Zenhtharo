@@ -37,7 +37,7 @@ export default function AdminDashboard() {
 
     const fetchContacts = async () => {
         try {
-            const res = await axios.get('https://zentharo-backend.onrender.com/api/contact');
+            const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/contact`);
             setContacts(res.data);
         } catch (err) { console.error(err); }
     };
@@ -45,7 +45,7 @@ export default function AdminDashboard() {
     // --- REVIEWS LOGIC ---
     const fetchReviews = async () => {
         try {
-            const res = await axios.get('https://zentharo-backend.onrender.com/api/reviews');
+            const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/reviews`);
             setReviews(res.data);
         } catch (err) { console.error(err); }
     };
@@ -54,10 +54,10 @@ export default function AdminDashboard() {
         e.preventDefault();
         try {
             if (editingReviewId) {
-                await axios.put(`https://zentharo-backend.onrender.com/api/reviews/${editingReviewId}`, reviewForm);
+                await axios.put(`${process.env.NEXT_PUBLIC_API_URL}/api/reviews/${editingReviewId}`, reviewForm);
                 setEditingReviewId(null);
             } else {
-                await axios.post('https://zentharo-backend.onrender.com/api/reviews', reviewForm);
+                await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/reviews`, reviewForm);
             }
             setReviewForm({ name: '', rating: 5, review: '', image: '' });
             fetchReviews();
@@ -67,7 +67,7 @@ export default function AdminDashboard() {
     const handleDeleteReview = async (id) => {
         if (!window.confirm('Are you sure you want to delete this review?')) return;
         try {
-            await axios.delete(`https://zentharo-backend.onrender.com/api/reviews/${id}`);
+            await axios.delete(`${process.env.NEXT_PUBLIC_API_URL}/api/reviews/${id}`);
             fetchReviews();
         } catch (err) { alert('Error deleting review'); }
     };
@@ -91,7 +91,7 @@ export default function AdminDashboard() {
     // --- SERVICES LOGIC ---
     const fetchServices = async () => {
         try {
-            const res = await axios.get('https://zentharo-backend.onrender.com/api/services');
+            const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/services`);
             setServices(res.data);
         } catch (err) { console.error(err); }
     };
@@ -100,10 +100,10 @@ export default function AdminDashboard() {
         e.preventDefault();
         try {
             if (editingServiceId) {
-                await axios.put(`https://zentharo-backend.onrender.com/api/services/${editingServiceId}`, serviceForm);
+                await axios.put(`${process.env.NEXT_PUBLIC_API_URL}/api/services/${editingServiceId}`, serviceForm);
                 setEditingServiceId(null);
             } else {
-                await axios.post('https://zentharo-backend.onrender.com/api/services', serviceForm);
+                await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/services`, serviceForm);
             }
             setServiceForm({ title: '', description: '', icon: 'FaCode', image: '' });
             fetchServices();
@@ -113,7 +113,7 @@ export default function AdminDashboard() {
     const handleDeleteService = async (id) => {
         if (!window.confirm('Are you sure you want to delete this service?')) return;
         try {
-            await axios.delete(`https://zentharo-backend.onrender.com/api/services/${id}`);
+            await axios.delete(`${process.env.NEXT_PUBLIC_API_URL}/api/services/${id}`);
             fetchServices();
         } catch (err) { alert('Error deleting service'); }
     };

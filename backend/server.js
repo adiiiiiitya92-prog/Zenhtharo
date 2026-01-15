@@ -10,7 +10,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
-    origin: ["https://mellow-kheer-90fc31.netlify.app", "http://localhost:3000"],
+    origin: ["https://mellow-kheer-90fc31.netlify.app", "http://localhost:3000", "https://zentharo.live", "https://www.zentharo.live"],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true
 }));

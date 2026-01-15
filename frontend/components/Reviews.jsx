@@ -11,7 +11,7 @@ const Reviews = () => {
     useEffect(() => {
         const fetchReviews = async () => {
             try {
-                const res = await axios.get('https://zentharo-backend.onrender.com/api/reviews');
+                const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/reviews`);
                 setReviews(res.data);
             } catch (error) {
                 console.error("Error fetching reviews", error);

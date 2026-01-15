@@ -21,7 +21,7 @@ const ContactForm = () => {
         e.preventDefault();
         setStatus('sending');
         try {
-            await axios.post('http://localhost:5000/api/contact', formData);
+            await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/contact`, formData);
             setStatus('success');
             setFormData({ name: '', email: '', phone: '', business: '', message: '' });
         } catch (error) {
