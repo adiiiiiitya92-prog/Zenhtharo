@@ -1,6 +1,6 @@
 export const metadata = {
-    title: 'About Us | ZenHtharo',
-    description: 'Learn about our mission, vision, and team at ZenHtharo.',
+    title: 'About Us | Zentharo',
+    description: 'Learn about our mission, vision, and team at Zentharo.',
 };
 
 export default function AboutPage() {
@@ -10,11 +10,11 @@ export default function AboutPage() {
 
                 {/* Story Section */}
                 <section className="mb-20">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-8 text-center">About <span className="text-royal-blue">ZenHtharo</span></h1>
+                    <h1 className="text-4xl md:text-6xl font-bold mb-8 text-center">About <span className="text-royal-blue">Zentharo</span></h1>
                     <div className="glass-card p-10 rounded-2xl">
                         <h2 className="text-2xl font-bold mb-4 text-white">Our Story</h2>
                         <p className="text-gray-300 mb-6 leading-relaxed">
-                            Founded with a passion for digital excellence, ZenHtharo began as a small collective of creatives and strategists.
+                            Founded with a passion for digital excellence, Zentharo began as a small collective of creatives and strategists.
                             We recognized a gap in the market for a digital agency that truly bridges the gap between stunning creative design
                             and hard-hitting performance marketing.
                         </p>

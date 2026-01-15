@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="col-span-1 md:col-span-1">
                         <Link href="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-royal-blue to-neon-blue">
-                            ZenHtharo
+                            Zentharo
                         </Link>
                         <p className="mt-4 text-gray-400 text-sm">
                             Elevating brands through performance-driven digital strategies.
@@ -40,7 +40,7 @@ const Footer = () => {
                             <a href="#" className="text-gray-400 hover:text-neon-blue transition-colors text-xl"><FaFacebook /></a>
                         </div>
                         <p className="mt-4 text-gray-500 text-xs">
-                            © {new Date().getFullYear()} ZenHtharo. All rights reserved.
+                            © {new Date().getFullYear()} Zentharo. All rights reserved.
                         </p>
                     </div>
                 </div>

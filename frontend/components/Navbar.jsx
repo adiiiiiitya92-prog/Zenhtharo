@@ -24,7 +24,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-between h-20">
                     <div className="flex-shrink-0">
                         <Link href="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-royal-blue to-neon-blue text-glow">
-                            ZenHtharo
+                            Zentharo
                         </Link>
                     </div>
                     <div className="hidden md:block">

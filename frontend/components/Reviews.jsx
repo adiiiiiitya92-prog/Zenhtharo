@@ -11,13 +11,13 @@ const Reviews = () => {
     useEffect(() => {
         const fetchReviews = async () => {
             try {
-                const res = await axios.get('http://localhost:5000/api/reviews');
+                const res = await axios.get('https://zentharo-backend.onrender.com/api/reviews');
                 setReviews(res.data);
             } catch (error) {
                 console.error("Error fetching reviews", error);
                 // Fallback or empty state
                 setReviews([
-                    { _id: '1', name: 'John Doe', rating: 5, review: 'Amazing service! ZenHtharo transformed our online presence.', date: new Date() },
+                    { _id: '1', name: 'John Doe', rating: 5, review: 'Amazing service! Zentharo transformed our online presence.', date: new Date() },
                     { _id: '2', name: 'Jane Smith', rating: 5, review: 'Professional and results-driven. Highly recommend.', date: new Date() },
                     { _id: '3', name: 'Tech Corp', rating: 4, review: 'Great SEO results within months.', date: new Date() },
                 ]);

@@ -3,13 +3,29 @@ import Footer from "../components/Footer";
 import "./globals.css";
 
 export const metadata = {
-    title: "ZenHtharo | Digital Marketing Agency",
-    description: "ZenHtharo is a performance-driven digital marketing agency specializing in SEO, Social Media, and Web Development.",
-    openGraph: {
-        title: "ZenHtharo | Elevate Your Digital Presence",
-        description: "Expert digital marketing services to grow your brand.",
-        type: "website",
+    title: {
+        default: "Zentharo | Digital Marketing & Web Development Agency",
+        template: "%s | Zentharo"
     },
+    description: "Zentharo is a premier digital marketing agency specializing in SEO, Social Media Marketing, Web Development, and Performance Growth. Elevate your brand today.",
+    keywords: ["Digital Marketing", "SEO", "Web Development", "Social Media Marketing", "Zentharo", "Marketing Agency", "Growth Hacking"],
+    openGraph: {
+        title: "Zentharo | Elevate Your Digital Presence",
+        description: "Expert digital marketing services to grow your brand. SEO, Web Dev, and detailed analytics.",
+        url: "https://zentharo-backend.onrender.com",
+        siteName: "Zentharo",
+        type: "website",
+        locale: "en_US",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Zentharo | Digital Marketing Agency",
+        description: "Transform your digital presence with Zentharo.",
+    },
+    robots: {
+        index: true,
+        follow: true,
+    }
 };
 
 export default function RootLayout({ children }) {

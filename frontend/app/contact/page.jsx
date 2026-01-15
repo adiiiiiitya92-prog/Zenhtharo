@@ -2,8 +2,8 @@ import ContactForm from '../../components/ContactForm';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 
 export const metadata = {
-    title: 'Contact Us | ZenHtharo',
-    description: 'Get in touch with ZenHtharo digital marketing agency.',
+    title: 'Contact Us | Zentharo',
+    description: 'Get in touch with Zentharo digital marketing agency.',
 };
 
 export default function ContactPage() {
@@ -38,7 +38,7 @@ export default function ContactPage() {
                                     <FaEnvelope className="text-neon-blue text-2xl mt-1" />
                                     <div>
                                         <h4 className="font-semibold text-white">Email</h4>
-                                        <p className="text-gray-400">hello@zenhtharo.com</p>
+                                        <p className="text-gray-400">hello@zentharo.com</p>
                                     </div>
                                 </div>
                             </div>

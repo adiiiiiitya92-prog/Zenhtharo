@@ -15,7 +15,7 @@ const Hero = () => {
                     transition={{ duration: 0.8 }}
                     className="text-5xl md:text-7xl font-bold tracking-tight mb-6"
                 >
-                    ZenHtharo <span className="block text-transparent bg-clip-text bg-gradient-to-r from-royal-blue to-neon-blue mt-2">Elevate Your Digital Presence</span>
+                    Zentharo <span className="block text-transparent bg-clip-text bg-gradient-to-r from-royal-blue to-neon-blue mt-2">Elevate Your Digital Presence</span>
                 </motion.h1>
 
                 <motion.p
